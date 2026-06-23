@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CHARLY'S Locations — Visit us on Lincoln Road in Miami Beach, and coming soon to Hollywood Beach and FIU.">
+  <title>Locations — CHARLY'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .loc-hero {
+      padding: calc(var(--nav-height) + 60px) 0 60px;
+      text-align: center;
+      background: linear-gradient(160deg, var(--sand-pale) 0%, var(--sky-pale) 60%, var(--sand-light) 100%);
+    }
+    .loc-hero .where-tag {
+      color: var(--teal);
+      font-family: var(--ff-heading);
+      font-style: italic;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+    .loc-hero h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .locations-list {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .loc-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      padding: 40px;
+    }
+    .loc-card:nth-child(even) .loc-info { order: 2; }
+    .loc-card:nth-child(even) .loc-map { order: 1; }
+
+    .loc-badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    .badge-open {
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      color: #fff;
+    }
+    .badge-soon {
+      background: linear-gradient(135deg, var(--caramel), var(--caramel-dark));
+      color: #fff;
+    }
+
+    .loc-info h3 { font-size: 1.3rem; margin-bottom: 8px; }
+    .loc-address {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .loc-info p {
+      font-size: 0.92rem;
+      opacity: 0.8;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .loc-map {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      height: 280px;
+    }
+    .loc-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (max-width: 768px) {
+      .loc-card { grid-template-columns: 1fr; }
+      .loc-card:nth-child(even) .loc-info { order: 1; }
+      .loc-card:nth-child(even) .loc-map { order: 2; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Charly's</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="careers.html">Careers</a>
+        <a href="locations.html" class="active">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" class="btn btn-primary">Order Now</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="loc-hero">
+    <div class="container reveal">
+      <p class="where-tag">Where to</p>
+      <h1>Fall in Love Again</h1>
+    </div>
+  </section>
+
+  <div class="wave-separator">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <section class="section section-cream">
+    <div class="container">
+      <div class="locations-list">
+
+        <div class="glass-card loc-card reveal">
+          <div class="loc-info">
+            <span class="loc-badge badge-open">Now Open</span>
+            <h3>Lincoln Road, Miami Beach</h3>
+            <p class="loc-address">345 Lincoln Road, Miami Beach, FL 33139</p>
+            <p>The original CHARLY'S location and where we first Fell in Love Again. Located in the heart of the iconic Lincoln Road, this is where fresh churros, signature waffles, premium coffee, matcha, and handcrafted desserts come together.</p>
+            <a href="https://maps.google.com/?q=345+Lincoln+Road+Miami+Beach+FL+33139" target="_blank" rel="noopener" class="btn btn-outline">Directions</a>
+          </div>
+          <div class="loc-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0!2d-80.1374!3d25.7907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ3JzI2LjUiTiA4MMKwMDgnMTQuNiJX!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" title="Lincoln Road location map"></iframe>
+          </div>
+        </div>
+
+        <div class="glass-card loc-card reveal">
+          <div class="loc-info">
+            <span class="loc-badge badge-soon">Coming Soon</span>
+            <h3>Hollywood Beach Broadwalk, Hollywood</h3>
+            <p class="loc-address">1000 N Broadwalk Unit 5, Hollywood, FL 33019</p>
+            <p>Just steps from the sand on the world-famous Hollywood Beach Broadwalk. Stop by for an iced coffee during your morning walk, enjoy lunch with a savory crepe, or treat yourself to fresh churros and waffles while watching the ocean breeze roll in.</p>
+            <a href="https://maps.google.com/?q=1000+N+Broadwalk+Hollywood+FL+33019" target="_blank" rel="noopener" class="btn btn-outline">Directions</a>
+          </div>
+          <div class="loc-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.0!2d-80.117!3d26.011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDAwJzQwLjAiTiA4MMKwMDcnMDEuMiJX!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" title="Hollywood Beach location map"></iframe>
+          </div>
+        </div>
+
+        <div class="glass-card loc-card reveal">
+          <div class="loc-info">
+            <span class="loc-badge badge-soon">Coming Soon</span>
+            <h3>Florida International University, Miami</h3>
+            <p class="loc-address">10955 SW 15th Street, GC 1210, Miami, FL 33199</p>
+            <p>Built for Panthers on the go. Our FIU location is a streamlined express concept featuring specialty coffee, matcha, soft serve, shakes, and churros designed for busy student life.</p>
+            <a href="https://maps.google.com/?q=10955+SW+15th+St+Miami+FL+33199" target="_blank" rel="noopener" class="btn btn-outline">Directions</a>
+          </div>
+          <div class="loc-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.0!2d-80.3416!3d25.7563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ1JzIyLjciTiA4MMKwMjAnMjkuOCJX!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" title="FIU location map"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-separator flip">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Charly's</div>
+          <p>Fresh churros, handcrafted waffles, specialty coffee & matcha. A place to slow down, connect, and Fall in Love Again.</p>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.05a8.16 8.16 0 004.76 1.51V7.12a4.84 4.84 0 01-1-.43z"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="locations.html">Locations</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div><h4>Visit</h4><ul><li><a href="locations.html">Lincoln Road, Miami Beach</a></li><li><a href="locations.html">Hollywood Beach</a></li><li><a href="locations.html">FIU, Miami</a></li></ul></div>
+        <div><h4>Connect</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="#">Order Online</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 CHARLY'S. All rights reserved.</span>
+        <span>Made with love in Miami Beach</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

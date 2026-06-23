@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Careers at CHARLY'S — Join the team. Fun, fast-paced environment with career growth and employee dessert discounts.">
+  <title>Careers — CHARLY'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .careers-hero {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      padding-top: var(--nav-height);
+      background: linear-gradient(160deg, var(--sand-pale) 0%, var(--sky-pale) 60%, var(--sand-light) 100%);
+      overflow: hidden;
+    }
+    .careers-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+      padding: 60px 0;
+    }
+    .careers-hero-text h1 { margin-bottom: 16px; }
+    .careers-hero-img img {
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .perks-roles {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .perks h2 { margin-bottom: 32px; }
+    .perk-list { display: flex; flex-direction: column; gap: 14px; }
+    .perk-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+    }
+    .perk-check {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .roles { display: flex; flex-direction: column; gap: 24px; }
+    .role-card { padding: 32px; }
+    .role-card h3 {
+      color: var(--teal-dark);
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+    .role-card p {
+      font-size: 0.92rem;
+      opacity: 0.8;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 968px) {
+      .careers-hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .careers-hero-img img { height: 300px; }
+      .perks-roles { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Charly's</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="careers.html" class="active">Careers</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" class="btn btn-primary">Order Now</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="careers-hero">
+    <div class="container">
+      <div class="careers-hero-inner">
+        <div class="careers-hero-text reveal-left">
+          <h1>Start Your Next Adventure</h1>
+          <p>At CHARLY'S, you'll be part of a team that creates memorable moments every day through fresh churros, handcrafted drinks, and genuine hospitality.</p>
+        </div>
+        <div class="careers-hero-img reveal-right">
+          <img src="images/team-counter.webp" alt="Charly's team members smiling behind the counter">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-separator">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <section class="section section-cream">
+    <div class="container">
+      <div class="perks-roles">
+        <div class="perks reveal-left">
+          <h2>Be Part of the Team</h2>
+          <p style="margin-bottom:28px; opacity:0.85;">What you'll enjoy</p>
+          <div class="perk-list">
+            <div class="perk-item"><span class="perk-check">&#10003;</span> Fun, fast-paced environment</div>
+            <div class="perk-item"><span class="perk-check">&#10003;</span> Career growth opportunities</div>
+            <div class="perk-item"><span class="perk-check">&#10003;</span> Employee dessert discounts</div>
+            <div class="perk-item"><span class="perk-check">&#10003;</span> Competitive pay</div>
+            <div class="perk-item"><span class="perk-check">&#10003;</span> Supportive team culture</div>
+            <div class="perk-item"><span class="perk-check">&#10003;</span> Flexible scheduling</div>
+          </div>
+        </div>
+        <div class="roles reveal-right">
+          <div class="glass-card role-card">
+            <h3>Crew Member</h3>
+            <p>Create memorable guest experiences by preparing handcrafted churros, drinks, and desserts while delivering friendly, fast service in a fun team environment.</p>
+            <a href="contact.html" class="btn btn-primary">Apply Now</a>
+          </div>
+          <div class="glass-card role-card">
+            <h3>Assistant Manager</h3>
+            <p>Support daily operations, coach team members, manage shifts and inventory, and help ensure every guest receives an exceptional CHARLY'S experience.</p>
+            <a href="contact.html" class="btn btn-primary">Apply Now</a>
+          </div>
+          <div class="glass-card role-card">
+            <h3>General Manager</h3>
+            <p>Lead store performance, develop and inspire your team, drive sales growth, and oversee all aspects of daily operations and guest satisfaction.</p>
+            <a href="contact.html" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-separator flip">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Charly's</div>
+          <p>Fresh churros, handcrafted waffles, specialty coffee & matcha. A place to slow down, connect, and Fall in Love Again.</p>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.05a8.16 8.16 0 004.76 1.51V7.12a4.84 4.84 0 01-1-.43z"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="locations.html">Locations</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div><h4>Visit</h4><ul><li><a href="locations.html">Lincoln Road, Miami Beach</a></li><li><a href="locations.html">Hollywood Beach</a></li><li><a href="locations.html">FIU, Miami</a></li></ul></div>
+        <div><h4>Connect</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="#">Order Online</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 CHARLY'S. All rights reserved.</span>
+        <span>Made with love in Miami Beach</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CHARLY'S Menu — Fresh churros, sweet waffles, all-day breakfast, iced coffee & matcha, and premium ice cream.">
+  <title>Menu — CHARLY'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .menu-hero {
+      padding: calc(var(--nav-height) + 60px) 0 60px;
+      text-align: center;
+      background: linear-gradient(160deg, var(--sand-pale) 0%, var(--sky-pale) 60%, var(--sand-light) 100%);
+    }
+    .menu-hero h1 { margin-bottom: 8px; }
+    .menu-hero p {
+      font-family: var(--ff-heading);
+      font-style: italic;
+      color: var(--teal-dark);
+      font-size: 1.1rem;
+    }
+    .menu-hero .stars {
+      color: var(--caramel);
+      font-size: 1.4rem;
+      letter-spacing: 6px;
+      margin-bottom: 12px;
+    }
+    .menu-hero .hero-desc {
+      font-family: var(--ff-body);
+      font-style: normal;
+      color: var(--brown);
+      opacity: 0.8;
+      max-width: 500px;
+      margin: 16px auto 0;
+      font-size: 1rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .menu-card {
+      overflow: hidden;
+      padding: 0;
+    }
+    .menu-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .menu-card-body {
+      padding: 24px;
+    }
+    .menu-card h3 {
+      color: var(--teal-dark);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .menu-card p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      line-height: 1.7;
+    }
+
+    .menu-cta {
+      text-align: center;
+      padding: 60px 0 0;
+    }
+    .menu-cta p {
+      font-family: var(--ff-heading);
+      font-style: italic;
+      color: var(--teal);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 968px) {
+      .menu-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .menu-grid { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Charly's</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="careers.html">Careers</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" class="btn btn-primary">Order Now</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="menu-hero">
+    <div class="container reveal">
+      <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      <h1>Worth Falling in Love With</h1>
+      <p>Where Coffee, Breakfast & Desserts Come Together</p>
+      <p class="hero-desc">Fresh churros, handcrafted waffles, specialty coffee & matcha, all-day breakfast and premium ice cream in Miami.</p>
+    </div>
+  </section>
+
+  <div class="wave-separator">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <section class="section section-cream">
+    <div class="container">
+      <div class="menu-grid">
+        <div class="glass-card menu-card reveal">
+          <img src="images/churros.webp" alt="Classic churros with dipping sauces">
+          <div class="menu-card-body">
+            <h3>Classic Churros</h3>
+            <p>Golden, crispy on the outside and soft on the inside. Served with cinnamon, sugar and one of our 6 signature dip sauces.</p>
+          </div>
+        </div>
+        <div class="glass-card menu-card reveal">
+          <img src="images/waffles.webp" alt="Sweet waffles with toppings">
+          <div class="menu-card-body">
+            <h3>Sweet Waffles</h3>
+            <p>Perfect blend of flaky and crispy waffle topped with premium quality dip sauces and home-made whipped cream.</p>
+          </div>
+        </div>
+        <div class="glass-card menu-card reveal">
+          <img src="images/munch-pack.webp" alt="The Munch Pack churro box">
+          <div class="menu-card-body">
+            <h3>The Munch Pack</h3>
+            <p>Small bite crispy, golden churros topped with your favorite dip sauce and fruits. Perfect for sharing.</p>
+          </div>
+        </div>
+        <div class="glass-card menu-card reveal">
+          <img src="images/breakfast.webp" alt="All day breakfast waffles and acai bowl">
+          <div class="menu-card-body">
+            <h3>All Day Breakfast</h3>
+            <p>Start your day with our signature savory waffles or acai bowls made fresh to order and served all day long.</p>
+          </div>
+        </div>
+        <div class="glass-card menu-card reveal">
+          <img src="images/drinks.webp" alt="Iced coffee, matcha and mango drinks">
+          <div class="menu-card-body">
+            <h3>Iced Coffee & Matcha</h3>
+            <p>From handcrafted coffee and premium matcha to refreshing smoothies, there's something for every craving and every time of day.</p>
+          </div>
+        </div>
+        <div class="glass-card menu-card reveal">
+          <img src="images/icecream.webp" alt="Premium ice cream cones and cups">
+          <div class="menu-card-body">
+            <h3>Premium Ice Cream</h3>
+            <p>Made with rich Wisconsin dairy, our super premium ice cream delivers an exceptionally smooth, creamy texture in every scoop.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta reveal">
+        <p>Ready to order?</p>
+        <a href="#" class="btn btn-primary">Order Online</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-separator flip">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="var(--cream)"/>
+    </svg>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Charly's</div>
+          <p>Fresh churros, handcrafted waffles, specialty coffee & matcha. A place to slow down, connect, and Fall in Love Again.</p>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.05a8.16 8.16 0 004.76 1.51V7.12a4.84 4.84 0 01-1-.43z"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="locations.html">Locations</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div><h4>Visit</h4><ul><li><a href="locations.html">Lincoln Road, Miami Beach</a></li><li><a href="locations.html">Hollywood Beach</a></li><li><a href="locations.html">FIU, Miami</a></li></ul></div>
+        <div><h4>Connect</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="#">Order Online</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 CHARLY'S. All rights reserved.</span>
+        <span>Made with love in Miami Beach</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
